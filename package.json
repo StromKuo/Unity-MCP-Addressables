@@ -1,0 +1,20 @@
+{
+  "name": "com.strodio.unity-mcp-addressables",
+  "version": "0.1.0",
+  "displayName": "MCP Addressables Server",
+  "description": "Exposes Unity Addressables configuration as an MCP Server for AI-assisted asset group management and optimization.",
+  "unity": "2021.3",
+  "author": {
+    "name": "Strodio"
+  },
+  "dependencies": {
+    "com.unity.addressables": "1.21.0"
+  },
+  "keywords": [
+    "mcp",
+    "addressables",
+    "assets",
+    "bundles",
+    "groups"
+  ]
+}

@@ -1,0 +1,9 @@
+# Unity meta files for the package root are needed, but ignore OS junk
+.DS_Store
+
+# Python virtual environment (created by Setup Python Environment)
+MCP~/venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
