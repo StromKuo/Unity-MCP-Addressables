@@ -327,9 +327,9 @@ namespace Strodio.McpAddressables
                 {
                     string stdout = process.StandardOutput.ReadToEnd();
                     string stderr = process.StandardError.ReadToEnd();
-                    process.WaitForExit(120000);
+                    process.WaitForExit(600000); // 10 min – pip may download large wheels (cryptography ~7MB)
 
-                    output = string.IsNullOrEmpty(stdout) ? stderr : stdout;
+                    output = string.IsNullOrEmpty(stderr) ? stdout : $"{stdout}\n{stderr}".Trim();
                     return process.ExitCode == 0;
                 }
             }
